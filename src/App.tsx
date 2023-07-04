@@ -2,7 +2,7 @@ import React, {useReducer, useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
-import AddItemForm from "./AddItemForm";
+import {AddItemForm} from "./AddItemForm";
 import {
     AppBar,
     Toolbar,
@@ -130,13 +130,13 @@ function App() {
                             tasks={tasksForTodolist}
 
                             removeTask={removeTask}
-                            removeToDoList={removeToDoList}
-                            changeTasksTitle={changeTasksTitle}
+                            removeTodolist={removeToDoList}
+                            changeTaskTitle={changeTasksTitle}
                             changeTodolistTitle={changeTodolistTitle}
 
-                            changeTodoListFilter={changeTodolistFilter}
+                            changeFilter={changeTodolistFilter}
                             addTask={addTask}
-                            changeTasksStatus={changeTasksStatus}/>
+                            changeTaskStatus={changeTasksStatus}/>
                     </Paper>
                 </Grid>
             )

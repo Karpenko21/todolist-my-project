@@ -2,13 +2,12 @@ import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import styles from "./Todolist.module.css";
 import AddCircleSharpIcon from '@mui/icons-material/AddCircleSharp';
 import {IconButton, TextField} from "@mui/material";
-import DeleteIcon from "@mui/icons-material/Delete";
 
 type AddItemFormPropsType = {
     addItem: (title: string) => void
 }
 
-const AddItemForm: React.FC<AddItemFormPropsType> = (props) => {
+export const AddItemForm: React.FC<AddItemFormPropsType> = (props) => {
 
     const [title, setTitle] = useState("")
     const [error, setError] = useState<boolean>(false)
@@ -60,5 +59,3 @@ const AddItemForm: React.FC<AddItemFormPropsType> = (props) => {
         </div>
     );
 };
-
-export default AddItemForm;

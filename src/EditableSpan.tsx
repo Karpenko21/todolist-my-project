@@ -6,7 +6,7 @@ type EditableSpanPropsType = {
     changeTitle: (newTitle: string) => void
 }
 
-const EditableSpan: FC<EditableSpanPropsType> = (props) => {
+export const EditableSpan: FC<EditableSpanPropsType> = (props) => {
     const [isEditMode, setIsEditMode] = useState<boolean>(false)
     const [title, setTitle] = useState(props.title)
 
@@ -37,5 +37,3 @@ const EditableSpan: FC<EditableSpanPropsType> = (props) => {
                 {props.title}</span>
     );
 };
-
-export default EditableSpan;
