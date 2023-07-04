@@ -39,7 +39,7 @@ export type TasksStateType = {
 }
 
 
-function App() {
+function AppWithRedux() {
 
     const toDoListId_1 = v1()
     const toDoListId_2 = v1()
@@ -190,4 +190,4 @@ function App() {
     );
 }
 
-export default App;
+export default AppWithRedux;
